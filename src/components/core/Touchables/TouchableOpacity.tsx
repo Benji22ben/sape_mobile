@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, TouchableOpacity, TouchableOpacityProps} from 'react-native';
-import {style} from './style';
+import {getStyles} from './style';
 
 interface SapeTouchableOpacityProps extends TouchableOpacityProps {}
 
@@ -14,11 +14,11 @@ const SapeTouchableOpacity = ({
 
   return (
     <TouchableOpacity
-      style={style.touchable}
+      style={[getStyles('primary').color, getStyles().touchable]}
       onPress={onPressHandler}
       {...props}>
       {typeof children === 'string' ? (
-        <Text style={style.text}>{children}</Text>
+        <Text style={getStyles().text}>{children}</Text>
       ) : (
         children
       )}

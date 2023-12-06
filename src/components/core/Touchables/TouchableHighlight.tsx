@@ -1,5 +1,5 @@
 import {Text, TouchableHighlight, TouchableHighlightProps} from 'react-native';
-import {style} from './style';
+import {getStyles} from './style';
 
 interface SapeTouchableHighlightProps extends TouchableHighlightProps {}
 
@@ -13,10 +13,14 @@ const SapeTouchableHighlight = ({
 
   return (
     <TouchableHighlight
-      style={style.touchable}
+      style={[getStyles('primary').color, getStyles().touchable]}
       onPress={onPressHandler}
       {...props}>
-      {typeof children === 'string' ? <Text>{children}</Text> : children}
+      {typeof children === 'string' ? (
+        <Text style={getStyles().text}>{children}</Text>
+      ) : (
+        children
+      )}
     </TouchableHighlight>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, StatusBar} from 'react-native';
-import {SapeTouchableOpacity} from '../components/core/Buttons/Button';
 import Wrapper from '../components/core/Wrapper';
+import {SapeTouchableOpacity} from '../components/core/Touchables';
 
 const HomeScreen = () => {
   return (

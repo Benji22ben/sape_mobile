@@ -1,9 +1,9 @@
 import { StyleSheet } from "react-native";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 
-export const getStyles = (bgColor: string) => StyleSheet.create({
+export const getStyles = (bgColor?: string) => StyleSheet.create({
     color: {
-        backgroundColor: Colors[bgColor],
+        backgroundColor: Colors[bgColor ? bgColor : "primary"],
     },
     touchable: {
         padding: 10,
