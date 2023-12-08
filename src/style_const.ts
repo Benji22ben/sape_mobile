@@ -1,8 +1,7 @@
 export const Colors = {
     primary: '#80ED89',
-    secondary: '#03dac6',
+    primaryHover: "#4FA17A",
+    secondary: '#202020',
+    tertiary: '#F6F6F4',
     error: '#b00020',
-    onPrimary: '#ffffff',
-    onSecondary: '#000000',
-    onError: '#ffffff',
-  };
+};
