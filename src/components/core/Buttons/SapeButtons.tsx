@@ -1,4 +1,4 @@
-import {Box, Pressable, Text} from 'native-base';
+import {Pressable, Text} from 'native-base';
 import {InterfacePressableProps} from 'native-base/lib/typescript/components/primitives/Pressable/types';
 import React, {useEffect} from 'react';
 import {Animated} from 'react-native';

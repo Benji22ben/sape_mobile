@@ -1,14 +1,16 @@
 import React from 'react';
 import {SapeButtonsProps} from './SapeButtons';
 import SapeButtons from './SapeButtons';
-import {Colors} from '../../../style_const';
+import {useTheme} from 'native-base';
 
 function SapePrimaryButton({...props}: SapeButtonsProps) {
+  const {colors} = useTheme();
+
   return (
     <SapeButtons
       {...props}
-      textColor={Colors.secondary}
-      bgColorBox={Colors.primary}
+      textColor={colors.secondary[500]}
+      bgColorBox={colors.primary[500]}
     />
   );
 }
